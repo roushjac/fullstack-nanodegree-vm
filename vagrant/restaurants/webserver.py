@@ -12,7 +12,7 @@ session = DBSession()
 ## Make handler
 class webserverHandler(BaseHTTPRequestHandler):
     # I think do_GET is a special function name used by the HTTPServer 
-    # function, along with do_POST
+    # object, along with do_POST
     def do_GET(self):
         try:
             if self.path.endswith("/hello"):
